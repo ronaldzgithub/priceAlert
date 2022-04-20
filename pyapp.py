@@ -4,14 +4,14 @@ from tkinter import *
 from tkinter.ttk import *
 import os
 import smtplib
-
+# ronaldz.
 
 def sendmail(save, current):
 	dest_mail = email.get()
-	EMAIL_ADDRESS = os.environ.get('DB_USER')
-	EMAIL_PASSWORD = os.environ.get('DB_PASS')
+	EMAIL_ADDRESS = 'solanadata@163.com' #os.environ.get('DB_USER')
+	EMAIL_PASSWORD = '66Dashun'#os.environ.get('DB_PASS')
 
-	with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+	with smtplib.SMTP('smtp.163.com', 587) as smtp:
 		smtp.ehlo()
 		smtp.starttls()
 		smtp.ehlo()
